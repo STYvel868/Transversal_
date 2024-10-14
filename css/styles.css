@@ -1,0 +1,28 @@
+*{
+    margin: 0 auto;
+    float: unset;
+    height: 100%;
+    width: 100%;
+}
+.header{
+    background-color: darkred;
+    height: 150px;
+}
+.nav-bar{
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: white;
+}
+.general{
+    align-content: center;
+    width: 75%;
+    height: 100%;
+}
+.footer{
+    text-align: center;
+    color: lightgrey;
+}
