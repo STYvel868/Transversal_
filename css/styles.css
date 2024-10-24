@@ -9,6 +9,7 @@ a{
     background-color: darkred;
     height: 125px;
     top: 0;
+    text-align: center;
 }
 .nav-bar{
     background-color: black;
@@ -23,6 +24,10 @@ a{
 .nav-bar li {
     display: inline;
     margin-right: 150px  ;
+}
+.nav{
+    background-color: white;
+    width: 50px;
 }
 #bar{
     list-style-type: none;
@@ -43,7 +48,6 @@ article{
     align-items: center;
     justify-content: center;
 }
-img{
-    max-width: 100%;
-    max-height: 100%;
+.news-img{
+    width: 300px;   
 }
