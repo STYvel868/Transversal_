@@ -51,3 +51,30 @@ article{
 .news-img{
     width: 300px;   
 }
+
+body {
+    font-family: Arial, sans-serif; 
+}
+
+.form-group {
+    display: flex; 
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    width: 150px; 
+    margin-right: 10px; 
+    font-weight: bold; 
+}
+
+.form-group input {
+    flex: 1; /* El campo de entrada ocupa el resto del espacio */
+    padding: 8px; /* Espaciado interno del campo */
+    box-sizing: border-box; /* Evita que el padding cambie el ancho total */
+}
+
+button {
+    padding: 10px 15px; /* Espaciado para el botón */
+    font-size: 16px; /* Tamaño de fuente para el botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
