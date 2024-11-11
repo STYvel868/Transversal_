@@ -87,7 +87,6 @@ article{
     /* No hay borde */
 }
 
-<<<<<<< HEAD
 .form-group label {
     width: 150px; /* Ancho fijo para las etiquetas */
     margin-right: 10px; /* Espacio entre etiqueta y campo */
@@ -115,7 +114,6 @@ article{
 #button_modify:hover {/*¡¡¡ID O CLASE!!!*/
     background-color: #0056b3; /* Color de fondo al pasar el ratón */
 }
-=======
 /* Estilo para los campos de respuesta de tipo texto (input y textarea) */
 .form-input#nombre,
 .form-input#email,
@@ -177,4 +175,3 @@ article{
     margin-bottom: 10px;
     text-align: left;
 }
->>>>>>> 65d75bd (Formulario hecho)
