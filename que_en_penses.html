@@ -2,57 +2,76 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Opiniones sobre Videojuegos</title>
-    <link rel="stylesheet" href="css/styles.css"> <!-- Enlaza al archivo CSS externo -->
+    <title>¿Qué en piensas?</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
-    <h2>¡Dinos tu opinión sobre videojuegos!</h2>
-    <form action="submit_form.php" method="POST" id="miFormulario">
-        <!-- Nombre del usuario -->
-        <div class="form-group">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-        </div>
+    <div class="form-container">
+        <h1>Formulario Videojuegos</h1>
+        <form action="que_en_penses_enviat.html" method="post">
+            
+            <!-- Entrada de texto corto -->
+            <label for="nombre" class="form-label">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" class="form-input" required>
 
-        <!-- Correo electrónico -->
-        <div class="form-group">
-            <label for="email">Correo Electrónico:</label>
-            <input type="email" id="email" name="email" required>
-        </div>
+            <!-- Entrada de correo electrónico -->
+            <label for="email" class="form-label">Correo electrónico:</label>
+            <input type="email" id="email" name="email" class="form-input" required>
 
-        <!-- Juego favorito -->
-        <div class="form-group">
-            <label for="juegoFavorito">Juego Favorito:</label>
-            <input type="text" id="juegoFavorito" name="juegoFavorito" required>
-        </div>
+            <!-- Entrada numérica -->
+            <label for="edad" class="form-label">Edad:</label>
+            <input type="number" id="edad" name="edad" class="form-input" min="12" max="100" required>
 
-        <!-- Plataforma preferida -->
-        <div class="form-group">
-            <label for="plataforma">Plataforma Preferida:</label>
-            <select id="plataforma" name="plataforma" required>
-                <option value="pc">PC</option>
-                <option value="consola">Consola</option>
-                <option value="movil">Móvil</option>
+            <!-- Entrada de texto desplegable -->
+            <label for="genero_favorito" class="form-label">Género favorito:</label>
+            <select id="genero_favorito" name="genero_favorito" class="form-select" required>
+                <option value="rpg">RPG</option>
+                <option value="plataformas">Plataformas</option>
+                <option value="estrategia">Estrategia</option>
+                <option value="otros">Otros</option>
             </select>
-        </div>
 
-        <!-- Opinión sobre videojuegos -->
-        <div class="form-group">
-            <label for="opinion">¿Qué opinas de los videojuegos?</label>
-            <textarea id="opinion" name="opinion" rows="4" required placeholder="Escribe tu opinión aquí..."></textarea>
-        </div>
+            <!-- Checkbox -->
+            <label class="form-label">Plataformas en las que juegas:</label>
+            <div class="form-checkbox-group">
+                <div>
+                    <input type="checkbox" id="pc" name="plataforma" value="pc" checked class="form-checkbox">
+                    <label for="pc" class="form-label-inline">PC</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="consola" name="plataforma" value="consola" class="form-checkbox">
+                    <label for="consola" class="form-label-inline">Consola</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="movil" name="plataforma" value="movil" class="form-checkbox">
+                    <label for="movil" class="form-label-inline">Móvil</label>
+                </div>
+            </div>
 
-        <!-- Calificación del 1 al 5 -->
-        <div class="form-group">
-            <label for="calificacion">Calificación (1 a 5):</label>
-            <input type="range" id="calificacion" name="calificacion" min="1" max="5" required>
-        </div>
+            <!-- Radio buttons -->
+            <label class="form-label">¿Con qué frecuencia juegas videojuegos?</label>
+            <div class="form-radio-group">
+                <div>
+                    <input type="radio" id="diariamente" name="frecuencia" value="diariamente" checked class="form-radio">
+                    <label for="diariamente" class="form-label-inline">Diariamente</label>
+                </div>
+                <div>
+                    <input type="radio" id="semanalmente" name="frecuencia" value="semanalmente" class="form-radio">
+                    <label for="semanalmente" class="form-label-inline">Semanalmente</label>
+                </div>
+                <div>
+                    <input type="radio" id="ocasionalmente" name="frecuencia" value="ocasionalmente" class="form-radio">
+                    <label for="ocasionalmente" class="form-label-inline">Ocasionalmente</label>
+                </div>
+            </div>
 
-        <!-- Botón de envío -->
-        <div class="form-group">
-            <button type="submit">Enviar</button>
-        </div>
-    </form>
+            <!-- Entrada de texto largo -->
+            <label for="opinion" class="form-label">¿Cuál es tu videojuego favorito? ¿Por qué?:</label>
+            <textarea id="opinion" name="opinion" class="form-textarea" placeholder="Escribe aquí tus comentarios..." required></textarea>
+            
+            <!-- Botón para enviar el formulario -->
+            <button type="submit" class="form-button">Enviar</button>
+        </form>
+    </div>
 </body>
 </html>
