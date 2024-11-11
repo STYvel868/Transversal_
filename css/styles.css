@@ -57,6 +57,9 @@ article{
     display: flex;
     flex-direction: row;
 }
+.contact-container > div{
+    display: inline;
+}
 .cont2{
     margin-top: 50px;
 }
