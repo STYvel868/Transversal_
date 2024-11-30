@@ -159,6 +159,21 @@ article{
     padding-left: 20px;
 }
 /**/
+/*galeria.html*/
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 1600px;
+}
+.imagen {
+    width: calc(33.33% - 10px);
+    box-sizing: border-box;
+    background-color: #fff; padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+/**/
 .form-container {
     max-width: 500px;
     margin: 0 auto;
