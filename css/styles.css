@@ -93,6 +93,7 @@ article{
 }
 .cont2{
     margin-top: 50px;
+    margin-left: 20px;
 }
 #paypalButton{
     background-color: whitesmoke;
@@ -105,7 +106,7 @@ article{
 }
 .contact-right{
     display: flex;
-    margin-left: 30px;
+    margin-left: 130px;
 }
 #p-contact-right{
     font-size: 20px;
@@ -116,25 +117,22 @@ article{
 }
 .x-img{
     width: 30px;
+    margin-left: 5px;
 }
 .sm-container{
     display: flex;
     flex-direction: column;
-    margin-top: 200px;
-    margin-left: -325px;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 20px;
 }
-#ig-icon{
-    margin-left: -80px;
-    margin-top: -10px;
+.sm{
+    display: flex;
+    align-items: center;
 }
-#fb-icon{
-    margin-left: -80px;
-    margin-top: 10px;
-}
-#x-icon{
-    margin-left: -10px;
-    margin-top: 20px;
-}
+ .who{
+    padding: 20px;
+ }
 /**/
 /*generos.html*/
 .generos-ul section ul li{
