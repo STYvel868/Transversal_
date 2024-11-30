@@ -78,6 +78,11 @@ article{
     width: 200px;
     padding: 50px;
 }
+.divider {
+    border: none;
+    border-top: 2px solid black;
+    margin: 20px 0;
+}
 /*nosaltres.html*/
 .contact-container{
     display: flex;
@@ -131,7 +136,31 @@ article{
     margin-top: 20px;
 }
 /**/
-
+/*generos.html*/
+.generos-ul section ul li{
+    margin-bottom: 10px;
+}
+.generos-ul section ul{
+    margin-left: -20px;
+    list-style-type: none;
+}
+.generos-ul section{
+    margin-left: 100px;
+}
+.ul2{
+    margin-left: -100px;
+}
+.generos-ul li{
+    background-color: darkred;
+    color: white;
+    border-radius: 5pt;
+    padding: 5px;
+    margin-left: -20px;
+}
+#sec-push-aventura{
+    padding-left: 20px;
+}
+/**/
 .form-container {
     max-width: 500px;
     margin: 0 auto;
@@ -238,4 +267,8 @@ article{
     width: 90%;
     margin-bottom: 10px;
     text-align: left;
+}
+
+.saga-img{
+    width: 500px;
 }
