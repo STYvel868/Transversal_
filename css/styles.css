@@ -6,11 +6,28 @@ a:not(.form-link){
     color: inherit;
     text-decoration: none;
 }
+#imglogo{
+    width: 10%;
+    margin-left: 50px;
+}
+.logolabel{
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+#Title{
+    font-size: 35px;
+    margin: 0;
+}
 .header{
+    display: flex;
+    align-items: center;
     background-color: darkred;
     height: 125px;
     top: 0;
-    text-align: center;
+}
+.header img{
+    margin-right: 20px;
 }
 .nav-bar{
     background-color: black;
@@ -46,11 +63,20 @@ a:not(.form-link){
 }
 article{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
+.left a{
+    float: right;
+    margin-right: 10px;
+    background-color: darkred;
+    border-radius: 5pt;
+    padding: 10px;
+    color: white;
+}
 .news-img{
-    width: 300px;
+    width: 200px;
+    padding: 50px;
 }
 /*nosaltres.html*/
 .contact-container{
