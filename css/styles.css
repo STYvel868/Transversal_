@@ -166,12 +166,20 @@ article{
     gap: 10px;
     max-width: 1600px;
 }
-.imagen {
+.imagen-container{
     width: calc(33.33% - 10px);
+    height: 300px;
+    overflow: hidden;
     box-sizing: border-box;
-    background-color: #fff; padding: 5px;
+    background-color: #fff;
+    padding: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
+}
+.imagen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 /**/
 .form-container {
