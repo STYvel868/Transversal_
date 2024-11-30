@@ -1,0 +1,109 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Fondo oscuro */
+    color: #ffffff; /* Texto claro */
+}
+
+/* Estilos del encabezado */
+.header {
+    background-color: #1e1e1e;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.header img {
+    max-width: 150px;
+}
+
+/* Barra de navegación */
+.nav-bar {
+    background-color: #292929;
+    overflow: hidden;
+}
+
+.nav-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-bar ul li {
+    margin: 0 15px;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+.nav-bar ul li a:hover {
+    background-color: #3f3f3f;
+    border-radius: 5px;
+}
+
+/* Estilos para la sección de sagas */
+.general {
+    padding: 20px;
+    text-align: center;
+    background-color: #1e1e1e;
+}
+
+.general h1 {
+    margin-bottom: 30px;
+    color: #ff5722;
+    font-size: 2.5rem;
+}
+
+/* Contenedor de las sagas */
+.sagas-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+/* Elementos individuales de saga */
+.saga-item {
+    background-color: #292929;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.saga-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Ajustes de las imágenes */
+.saga-img {
+    width: 100%; /* La imagen ocupa el 100% del ancho del contenedor */
+    height: 200px; /* Ajuste de la altura */
+    object-fit: cover; /* Asegura que la imagen no se deforme */
+    display: block;
+    margin-bottom: 10px; /* Separación entre la imagen y el texto */
+}
+
+.saga-item h2 {
+    color: #ffffff;
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+
+.saga-item p {
+    padding: 0 10px 20px;
+    color: #dcdcdc;
+    font-size: 0.9rem;
+}
