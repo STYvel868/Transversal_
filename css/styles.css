@@ -60,6 +60,7 @@ a:not(.form-link){
     margin-right: 100px;
     border-radius: 10pt;
     padding: 50px;
+    margin-bottom: 75px;
 }
 article{
     display: flex;
