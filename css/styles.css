@@ -139,6 +139,7 @@ article{
     display: flex;
     align-items: flex-start;
 }
+
 #diego_imagen{
     margin-right: 20px;
     background-color: darkred;
@@ -151,17 +152,16 @@ article{
     height: auto;
     border-radius: 10pt;
 }
-#diego_txt{
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
+#diego_cv{
+    text-align: left;
 }
-#diego_txt p{
-    margin-top: 0;
+#diego_cv tr th{
+    background-color: darkred;
+    color: white;
+    border-radius: 5pt;
+    padding: 4px;
 }
-#idiomas{
-    margin-bottom: 0;
-}
+
 
 /**/
 /*generos.html*/
